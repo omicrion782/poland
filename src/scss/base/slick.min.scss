@@ -1,0 +1,16 @@
+body {
+    overflow-anchor: none
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+
+    padding: 0 10px; // чтобы убрать микрополоску (не всегда требуется)
+    display: flex;
+    align-items: flex-start;
+}
