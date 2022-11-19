@@ -1,3 +1,490 @@
 //====================================================================================================
 
+
+._container {}
+
+
 //====================================================================================================
+
+
+
+.home {
+    @media (min-width:$end){
+        min-height: 130vh;
+    }
+    min-height: 142.8vh;
+    
+    @media (max-width:$mobileSmall){
+        min-height: 130vh;
+    }
+}
+
+.home__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+
+}
+
+.home__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.home__label {}
+
+.home__title {
+    text-align: center;
+    @include adaptiv-value("font-size", 92, 50, 1);
+    margin-top: 28vh;
+    color: white;
+    span{
+        &:last-child {
+            color: #ed6950;
+        }
+    }
+}
+
+.home__lead-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: calc(34px / 1920px) * 100%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.home__button {
+    margin-top: calc(50px / 1200px) * 100%;
+    padding: calc(21px / 1200px) * 100% calc(36px / 1200px) * 100%;
+    font-size: 14px;
+
+}
+
+
+
+
+
+.home__images {
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+
+
+}
+
+.home-images {}
+
+.home-images__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home-images__clouds, .home-images__earth, .home-images__leaves, .home-images__tree {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.home-images__clouds {
+    background: url('@img/home/sky2.png') top / cover no-repeat;
+    top: 0;
+}
+
+.home-images__earth {
+    background: url('@img/home/earth.png') top / cover no-repeat;
+    top: 0;
+
+
+}
+
+.home-images__leaves {
+    background: url('@img/home/leaves.png') top / cover no-repeat;
+    top: 0;
+}
+
+.home-images__tree {
+    background: url('@img/home/tree.png') top / cover no-repeat;
+    top: -10%;
+    left: 61%;
+
+}
+
+@media (max-aspect-ratio: 3/2){
+    .home-images__leaves {
+        background-position: 20% top; // не даёт пропасть leaves при высоте > ширины
+    }
+}
+
+
+// //////////// destinations
+
+.destinations {
+    background-color: #0b1d26;
+    position: relative;
+}
+
+.destinations::before {
+    pointer-events: none; // элемент пропускает события
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    transform: translate(0px, -100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b1d26 80%);
+}
+
+
+.destinations__body{
+
+}
+
+
+
+
+
+// //////////// slider  ////////////////////////////////////////////////////
+
+.destinations__slider-wrapper {
+    padding: 0 25px; // внешние отступы слайдера
+    z-index: 3;
+    @media (max-width:$end){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0, -50%);
+    }
+    @media (max-width:$mobileSmall){
+        padding: 0 50px;
+        position: static;
+        transform: translate(0, 0);
+    }
+}
+
+.destinations__slider {
+
+}
+
+// .slider-wrapper__text {
+//     @media (min-width:$pc){
+//         display: none;
+//     }
+//     text-align: center;
+//     font-weight: bold;
+//     color: #fff;
+//     margin: 0 0 calc(50px / 1920px) * 100% 0;
+//     font-size: 18px;
+// }
+
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+
+}
+
+.destinations__slide {
+}
+
+.swiper-slide {
+position: relative;
+transition: all 0.4s ease 0s;
+}
+
+
+
+.swiper-slide__image.-ibg {
+    padding-bottom: calc(433px / 371px) * 100%; // высота слайда (подстраивается под подстраивающуюся ширину swiper-slide)
+    min-width: 100px;
+}
+
+
+
+.swiper-slide__content {
+    padding: 0 10px;
+    position: absolute;
+    transition: all 0.9s ease 0s;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    text-align: center;
+    color: #fff;
+    h3 {
+        transition: all 0.4s ease 0s;
+        margin: 0 0 calc(8px / 150px) * 100% 0;
+    }
+    span {
+        transition: all 0.4s ease 0s;
+    }
+
+
+    ////////////// ACTIVE SLIDE //////////////
+
+    .swiper-slide-active &, .swiper-slide-duplicate-active & {
+        transition: all 0.4s ease 0s;
+        top: 50%;
+
+        h3 {
+            transition: all 0.4s ease 0s;
+            font-size: 2.5vw;
+            @media (max-width:$tablet){
+                @include adaptiv-value("font-size", 50, 16, 1);
+            }
+            @media (max-width:$mobileSmall){
+                 font-size: 36px;
+            }
+        }
+
+        span {
+            transition: all 0.4s ease 0s;
+            font-size: 0.83vw;
+            @media (max-width:$tablet) {
+                @include adaptiv-value("font-size", 20, 10, 1);
+            }
+            @media (max-width:$mobileSmall){
+                 font-size: 18px;
+            }
+        }
+    }
+
+        ////////////// PREV/NEXT SLIDE //////////////
+
+    .swiper-slide-prev &, .swiper-slide-next &, .swiper-slide-duplicate-prev &, .swiper-slide-duplicate-next {
+            transition: all 0.4s ease 0s;
+            top: 80%;
+
+            h3 {
+                transition: all 0.4s ease 0s;
+                font-size: 1.5vw;
+                @media (max-width:$tablet) {
+                    @include adaptiv-value("font-size", 20, 10, 1);
+                }
+            }
+        
+            span {
+                transition: all 0.4s ease 0s;
+                font-size: 0.83vw;
+                color: #ffc74a;
+                @media (max-width:$tablet) {
+                    @include adaptiv-value("font-size", 12, 10, 1);
+                }
+            }
+    }
+}
+
+        ////////////// SLIDE CONTENT BUTTON //////////////
+.swiper-slide-button{
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+    padding: 1.6vh 1vw;
+    font-size: 0.83vw;
+    @media (max-width:$tablet) {
+        @include adaptiv-value("font-size", 12, 10, 1);
+    }
+
+
+    .swiper-slide-active &, .swiper-slide-duplicate-active & {
+        transition: all 0.3s ease 0s;
+        top: 85%;
+    }
+}
+
+
+        ////////////// SWIPE BUTTONS //////////////
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 25px;
+    right: auto;
+    @media (max-width:$mobileSmall) {
+        left: 15px;
+    }
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 25px;
+    left: auto;
+    @media (max-width:$mobileSmall){
+        right: 15px;
+    }
+}
+
+
+
+
+
+
+
+.swiper-slide__title {}
+
+.title {}
+
+.swiper-slide__region {}
+
+
+//////////////destinations/////////////////////////////////////////////////
+
+
+.destinations__container {}
+
+._container {}
+
+.destinations__title {}
+
+.title {}
+
+
+
+
+
+.destinations__container {
+    @media (min-width:$end){
+        margin-top: 60px; // slider static
+    }
+    @media (max-width:$end){
+        margin-top: calc(250px / 1920px) * 100%; // slider absolute
+    }
+    @media (max-width:$tablet){
+        margin-top: calc(250px / 991.98px) * 100% // slider absolute
+    }
+    @media (max-width:$mobileSmall){
+        margin-top: calc(60px / 1200px) * 100%; // slider static
+    }
+}
+
+
+.destinations__title {
+
+}
+
+.title {}
+
+.destinations__search {}
+
+.search {}
+
+.search__input {}
+
+.destinations__filter-buttons {}
+
+.filter-buttons {}
+
+.filter-buttons__left {}
+
+.filter-buttons__button {}
+
+.filter-buttons__right {}
+
+.destinations__cards {}
+
+.cards {}
+
+.cards__item {}
+
+.cards-item {}
+
+.cards-item__image {}
+
+.cards-item__content {}
+
+.cards-item__title {}
+
+.cards-item__region {}
+
+.cards-item__button {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zatbI4ka{
+    z-index: 3;
+    height: 2000px;
+    width: 100%;
+    background-color: #343434;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////common fragment styles ////////////
+
+
+.button {
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #be8505;
+    background-color: #ffc74a;
+
+}
