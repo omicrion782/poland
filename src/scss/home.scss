@@ -1,9 +1,5 @@
 //====================================================================================================
 
-
-._container {}
-
-
 //====================================================================================================
 
 
@@ -39,9 +35,6 @@
     align-items: center;
 }
 
-
-
-.home__label {}
 
 .home__title {
     text-align: center;
@@ -82,11 +75,8 @@
     height: 120%;
     top: -10%;
     left: -10%;
-
-
 }
 
-.home-images {}
 
 .home-images__item {
     position: absolute;
@@ -200,12 +190,6 @@
     overflow: hidden;
 }
 
-.swiper-wrapper {
-
-}
-
-.destinations__slide {
-}
 
 .swiper-slide {
 position: relative;
@@ -339,28 +323,10 @@ transition: all 0.4s ease 0s;
 
 
 
-
-
-.swiper-slide__title {}
-
-.title {}
-
-.swiper-slide__region {}
-
-
 //////////////destinations/////////////////////////////////////////////////
 
 
 .destinations__container {}
-
-._container {}
-
-.destinations__title {}
-
-.title {}
-
-
-
 
 
 .destinations__container {
@@ -379,45 +345,66 @@ transition: all 0.4s ease 0s;
 }
 
 
-.destinations__title {
 
-}
 
-.title {}
 
-.destinations__search {}
 
-.search {}
 
-.search__input {}
 
-.destinations__filter-buttons {}
 
-.filter-buttons {}
 
-.filter-buttons__left {}
 
-.filter-buttons__button {}
 
-.filter-buttons__right {}
 
-.destinations__cards {}
 
-.cards {}
 
-.cards__item {}
 
-.cards-item {}
 
-.cards-item__image {}
 
-.cards-item__content {}
 
-.cards-item__title {}
 
-.cards-item__region {}
 
-.cards-item__button {}
+// /////////// DEL \\\\\\\\\\\\\\ \\
+
+// .destinations__title {
+
+// }
+
+// .title {}
+
+// .destinations__search {}
+
+// .search {}
+
+// .search__input {}
+
+// .destinations__filter-buttons {}
+
+// .filter-buttons {}
+
+// .filter-buttons__left {}
+
+// .filter-buttons__button {}
+
+// .filter-buttons__right {}
+
+// .destinations__cards {}
+
+// .cards {}
+
+// .cards__item {}
+
+// .cards-item {}
+
+// .cards-item__image {}
+
+// .cards-item__content {}
+
+// .cards-item__title {}
+
+// .cards-item__region {}
+
+// .cards-item__button {}
 
 
 

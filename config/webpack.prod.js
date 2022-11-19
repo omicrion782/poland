@@ -101,7 +101,15 @@ const config = {
 						}
 					}
 				]
-			}
+			},
+        	{
+        		test: /\.m?js$/,
+        		exclude: /(node_modules | files | libs)/,
+        		use: {
+        		  loader: "babel-loader"
+        		}
+        	},
+
 		],
 	},
 	plugins: [
