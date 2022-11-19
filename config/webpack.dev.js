@@ -96,7 +96,13 @@ const config = {
 								},
 							},
 						},
-					}, {
+					}, 
+					
+					{
+						loader: 'postcss-loader'
+					},
+
+					{
 						loader: 'sass-loader',
 						options: {
 							sourceMap: true,
