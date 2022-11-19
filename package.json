@@ -21,6 +21,8 @@
 		"@babel/core": "^7.20.2",
 		"@babel/preset-env": "^7.20.2",
 		"@babel/preset-react": "^7.18.6",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.9",
 		"babel-loader": "^9.1.0",
 		"copy-webpack-plugin": "latest",
 		"css-loader": "latest",
@@ -76,12 +78,13 @@
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"simplebar": "latest"
+		"simplebar": "latest",
+		"ts-loader": "^9.4.1"
 	},
 	"babel": {
-    	"presets": [
-    	  "@babel/env",
-    	  "@babel/react"
-    	]
-  	}
+		"presets": [
+			"@babel/env",
+			"@babel/react"
+		]
+	}
 }

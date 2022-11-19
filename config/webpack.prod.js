@@ -109,6 +109,7 @@ const config = {
         		  loader: "babel-loader"
         		}
         	},
+			{ test: /\.tsx?$/, loader: "ts-loader" }
 
 		],
 	},
@@ -135,6 +136,7 @@ const config = {
 		})
 	],
 	resolve: {
+		extensions: [".ts", ".tsx", ".js"],
 		alias: {
 			"@scss": `${paths.src}/scss`,
 			"@js": `${paths.src}/js`,
