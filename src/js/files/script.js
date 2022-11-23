@@ -87,7 +87,6 @@ if (homeParallax) {
 
     for (let i = 0; i < 1.0; i += 0.005) {
         thresholdSets.push(i)
-        console.log(thresholdSets)
     }
 
     const callback = function (entries, observer) {
@@ -113,15 +112,6 @@ if (homeParallax) {
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 

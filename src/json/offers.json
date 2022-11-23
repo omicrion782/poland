@@ -1,0 +1,62 @@
+
+    [
+        {
+            "id": 1, 
+            "city": "Poznan",
+            "region": "Wielkopolskie",
+            "image": "../img/destinations/react/destinations-react1.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer1.jpg"
+        },
+
+        {
+            "id": 2, 
+            "city": "Warsaw",
+            "region": "Mazowieckie",
+            "image": "../img/destinations/react/destinations-react2.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer2.jpg"
+        },
+
+        {
+            "id": 3, 
+            "city": "Wroclaw",
+            "region": "Doloslaskie",
+            "image": "../img/destinations/react/destinations-react3.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer3.jpg"
+        },
+
+        {
+            "id": 4, 
+            "city": "Karpacz",
+            "region": "Dolnoslaskie",
+            "image": "../img/destinations/react/destinations-react4.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer4.jpg"
+        },
+
+        {
+            "id": 5, 
+            "city": "Dolina Olczyska",
+            "region": "Malopolskie",
+            "image": "../img/destinations/react/destinations-react5.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer5.jpg"
+        },
+
+        {
+            "id": 6, 
+            "city": "Kozy",
+            "region": "Slaskie",
+            "image": "../img/destinations/react/destinations-react6.png",
+            "descriptionpt1": "Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes",
+            "descriptionpt2": "The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.",
+            "descriptionimage": "../img/destinations/react/react-viewOffer6.jpg"
+        }
+    ]

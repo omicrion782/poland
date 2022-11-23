@@ -147,7 +147,15 @@ const config = {
 					from: `${srcFolder}/img`, to: `img`,
 					noErrorOnMissing: true,
 					force: true
-				}, {
+				}, 
+				
+				{
+					from: `${srcFolder}/json`, to: `json`,
+					noErrorOnMissing: true,
+					force: true
+				},
+				
+				{
 					from: `${srcFolder}/files`, to: `files`,
 					noErrorOnMissing: true,
 					force: true
